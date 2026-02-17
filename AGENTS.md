@@ -16,14 +16,22 @@ agent-skills/
 ├── README.md                          # Public-facing documentation
 ├── LICENSE                            # MIT license
 └── skills/
-    └── macos-calendar/                # One directory per skill
-        ├── SKILL.md                   # Skill definition (required)
+    ├── macos-calendar/                # One directory per skill
+    │   ├── SKILL.md                   # Skill definition (required)
+    │   ├── scripts/
+    │   │   └── calendar.sh            # Executable helper script
+    │   ├── references/
+    │   │   └── recurrence.md          # Reference docs for the agent
+    │   └── logs/
+    │       └── calendar.log           # Runtime action log (gitignored)
+    └── macos-reminders/
+        ├── SKILL.md
         ├── scripts/
-        │   └── calendar.sh            # Executable helper script
+        │   └── reminders.sh
         ├── references/
-        │   └── recurrence.md          # Reference docs for the agent
+        │   └── priorities.md
         └── logs/
-            └── calendar.log           # Runtime action log (gitignored)
+            └── reminders.log          # Runtime action log (gitignored)
 ```
 
 Each skill lives in `skills/<skill-name>/` with a required `SKILL.md` entry point and optional `scripts/`, `references/`, and `assets/` directories.
