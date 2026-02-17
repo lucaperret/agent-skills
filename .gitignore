@@ -1,0 +1,15 @@
+.DS_Store
+**/logs
+
+.codebuddy/
+.agent/
+.agents/
+.claude/
+.cursor/
+.gemini/
+.github/skills/
+.opencode/
+.qoder/
+.qwen/
+.trae/
+.vscode/
