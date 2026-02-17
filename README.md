@@ -2,7 +2,7 @@
   <img src="assets/banner.svg" alt="agent-skills" width="640" />
 </p>
 
-A collection of [Agent Skills](https://agentskills.io) that give AI coding agents superpowers beyond code — starting with macOS Calendar and Reminders management.
+A collection of [Agent Skills](https://agentskills.io) that give AI coding agents superpowers beyond code — macOS Calendar, Reminders, and Notes management.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -18,6 +18,7 @@ Works with [Claude Code](https://claude.ai/code), [Cursor](https://cursor.com), 
 |---|---|---|---|
 | [macos-calendar](skills/macos-calendar/) | Create, list, and manage Apple Calendar events using natural language | macOS | 1.2.0 |
 | [macos-reminders](skills/macos-reminders/) | Create, list, and manage Apple Reminders using natural language | macOS | 1.0.0 |
+| [macos-notes](skills/macos-notes/) | Create, read, search, and manage Apple Notes using natural language | macOS | 1.0.0 |
 
 ## Installation
 
@@ -35,7 +36,7 @@ The agent will use the appropriate skill automatically.
 
 ## Requirements
 
-- **macOS** with Calendar.app and Reminders.app
+- **macOS** with Calendar.app, Reminders.app, and Notes.app
 - `osascript` (ships with macOS) and `python3` (included with [Xcode Command Line Tools](https://developer.apple.com/xcode/resources/)) available in PATH
 
 ## Usage Examples
@@ -59,6 +60,16 @@ Once installed, just talk to your agent naturally.
 | "Add eggs and bread to my shopping list" | Creates reminders in the Shopping list |
 | "High priority: submit the report by Friday" | Creates a flagged, high-priority reminder with a due date |
 | "Show my work to-dos" | Lists incomplete reminders from the Work list |
+
+### macOS Notes
+
+| You say | What happens |
+|---|---|
+| "Write me a poem about spring and save it as a note" | Generates a poem and creates a note with it |
+| "Note this down: API format is prefix_xxxx" | Creates a note with the content |
+| "Show my recent notes" | Lists notes from the default folder |
+| "What did I write about passwords?" | Searches notes by title |
+| "Read my note about Hinge" | Returns the full note content |
 
 ## License
 

@@ -24,14 +24,20 @@ agent-skills/
     │   │   └── recurrence.md          # Reference docs for the agent
     │   └── logs/
     │       └── calendar.log           # Runtime action log (gitignored)
-    └── macos-reminders/
+    ├── macos-reminders/
+    │   ├── SKILL.md
+    │   ├── scripts/
+    │   │   └── reminders.sh
+    │   ├── references/
+    │   │   └── priorities.md
+    │   └── logs/
+    │       └── reminders.log          # Runtime action log (gitignored)
+    └── macos-notes/
         ├── SKILL.md
         ├── scripts/
-        │   └── reminders.sh
-        ├── references/
-        │   └── priorities.md
+        │   └── notes.sh
         └── logs/
-            └── reminders.log          # Runtime action log (gitignored)
+            └── notes.log              # Runtime action log (gitignored)
 ```
 
 Each skill lives in `skills/<skill-name>/` with a required `SKILL.md` entry point and optional `scripts/`, `references/`, and `assets/` directories.
