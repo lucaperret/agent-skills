@@ -5,7 +5,6 @@
 A collection of [Agent Skills](https://agentskills.io) that give AI coding agents superpowers beyond code — starting with macOS Calendar management.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Smithery](https://smithery.ai/badge/@lucaperret/macos-calendar)](https://smithery.ai/skills/lucaperret/macos-calendar)
 
 ## About
 
