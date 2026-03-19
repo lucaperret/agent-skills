@@ -2,13 +2,13 @@
   <img src="assets/banner.svg" alt="agent-skills" width="640" />
 </p>
 
-A collection of [Agent Skills](https://agentskills.io) that give AI coding agents superpowers beyond code — macOS Calendar, Reminders, and Notes management.
+A collection of [Agent Skills](https://agentskills.io) that give AI coding agents superpowers beyond code — macOS native apps, MCP server deployment, and AI connector publishing.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## About
 
-Agent Skills extend AI coding agents with real-world capabilities. Instead of being limited to editing files and running commands, your agent can interact with native macOS apps, schedule events, and handle tasks you'd normally do by hand.
+Agent Skills extend AI coding agents with real-world capabilities. Instead of being limited to editing files and running commands, your agent can interact with native macOS apps, deploy MCP servers, and publish AI connectors.
 
 Works with [Claude Code](https://claude.ai/code), [Cursor](https://cursor.com), [Gemini CLI](https://geminicli.com), [GitHub Copilot](https://github.com/features/copilot), and [other compatible agents](https://agentskills.io).
 
@@ -19,6 +19,9 @@ Works with [Claude Code](https://claude.ai/code), [Cursor](https://cursor.com), 
 | [macos-calendar](skills/macos-calendar/) | Create, list, and manage Apple Calendar events using natural language | macOS | 1.2.0 |
 | [macos-reminders](skills/macos-reminders/) | Create, list, and manage Apple Reminders using natural language | macOS | 1.0.0 |
 | [macos-notes](skills/macos-notes/) | Create, read, search, and manage Apple Notes using natural language | macOS | 1.0.0 |
+| [mcp-vercel](skills/mcp-vercel/) | Deploy a remote MCP server on Vercel with Next.js and mcp-handler | Any | 1.0.0 |
+| [mcp-oauth](skills/mcp-oauth/) | Add OAuth 2.0 PKCE authentication to a remote MCP server | Any | 1.0.0 |
+| [anthropic-connector-submit](skills/anthropic-connector-submit/) | Prepare and submit an MCP server to Anthropic's Connectors Directory | Any | 1.0.0 |
 
 ## Installation
 
@@ -36,8 +39,9 @@ The agent will use the appropriate skill automatically.
 
 ## Requirements
 
-- **macOS** with Calendar.app, Reminders.app, and Notes.app
-- `osascript` (ships with macOS) and `python3` (included with [Xcode Command Line Tools](https://developer.apple.com/xcode/resources/)) available in PATH
+**macOS skills:** macOS with Calendar.app, Reminders.app, and Notes.app. `osascript` and `python3` in PATH.
+
+**MCP skills:** Node.js >= 20, a Vercel account (for mcp-vercel), and a Next.js project.
 
 ## Usage Examples
 
@@ -70,6 +74,14 @@ Once installed, just talk to your agent naturally.
 | "Show my recent notes" | Lists notes from the default folder |
 | "What did I write about passwords?" | Searches notes by title |
 | "Read my note about Hinge" | Returns the full note content |
+
+### MCP Server Deployment
+
+| You say | What happens |
+|---|---|
+| "Set up an MCP server on Vercel for my recipe API" | Creates route handler with mcp-handler, tool annotations, and deploy instructions |
+| "Add OAuth to my MCP server so users log in with Spotify" | Sets up full OAuth PKCE flow with discovery, registration, and token endpoints |
+| "How do I get my MCP server listed in Claude's connector directory?" | Walks through the 6-page Anthropic submission form with templates |
 
 ## License
 

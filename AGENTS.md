@@ -32,12 +32,18 @@ agent-skills/
     │   │   └── priorities.md
     │   └── logs/
     │       └── reminders.log          # Runtime action log (gitignored)
-    └── macos-notes/
-        ├── SKILL.md
-        ├── scripts/
-        │   └── notes.sh
-        └── logs/
-            └── notes.log              # Runtime action log (gitignored)
+    ├── macos-notes/
+    │   ├── SKILL.md
+    │   ├── scripts/
+    │   │   └── notes.sh
+    │   └── logs/
+    │       └── notes.log              # Runtime action log (gitignored)
+    ├── mcp-vercel/
+    │   └── SKILL.md                   # MCP server deployment on Vercel
+    ├── mcp-oauth/
+    │   └── SKILL.md                   # OAuth 2.0 PKCE for MCP servers
+    └── anthropic-connector-submit/
+        └── SKILL.md                   # Anthropic Connectors Directory submission
 ```
 
 Each skill lives in `skills/<skill-name>/` with a required `SKILL.md` entry point and optional `scripts/`, `references/`, and `assets/` directories.
